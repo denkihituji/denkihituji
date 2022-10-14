@@ -66,8 +66,8 @@ h6 {
 }
 @media (max-width: 767px) {
   .inner {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 }
 
@@ -79,6 +79,7 @@ h6 {
 @media (max-width: 767px) {
   .header {
     height: 80px;
+    width: 100%;
   }
 }
 
@@ -91,6 +92,11 @@ h6 {
 .header__logo {
   width: 108px;
   margin-left: 16px;
+}
+@media (max-width: 767px) {
+  .header__logo {
+    width: 75px;
+  }
 }
 .header__logo img {
   display: block;
@@ -105,25 +111,30 @@ h6 {
   display: flex;
   align-items: center;
   margin-left: auto;
-}
-.header__nav li {
   color: #707070;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 1px;
 }
+@media (max-width: 767px) {
+  .header__nav {
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    margin-left: 0;
+  }
+}
 .header__nav li:not(:first-child) {
   margin-left: 38px;
 }
 @media (max-width: 767px) {
-  .header__nav li {
-    font-size: 10px;
-    line-height: 1.3;
+  .header__nav li:not(:first-child) {
+    margin-left: 20px;
   }
 }
 /*---main__visual---*/
 .main__visual {
   height: 664px;
+  width: 100%;
 }
 @media (max-width: 767px) {
   .main__visual {
@@ -158,6 +169,11 @@ h6 {
   padding: 80px 242px 66px 251px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .intro {
+    padding: 35px 0 30px;
+  }
+}
 
 .title {
   font-size: 50px;
@@ -166,12 +182,27 @@ h6 {
   margin-bottom: 20px;
   padding-left: 5px;
 }
+@media (max-width: 767px) {
+  .title {
+    font-size: 30px;
+    line-height: 0.6;
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+}
 
 .icon {
   display: inline-flex;
   height: 41px;
   margin-bottom: 21px;
   padding-left: 3px;
+}
+@media (max-width: 767px) {
+  .icon {
+    height: 20px;
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
 }
 
 .lead {
@@ -182,6 +213,14 @@ h6 {
   margin-bottom: 10px;
   padding-left: 5px;
 }
+@media (max-width: 767px) {
+  .lead {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: normal;
+    padding-left: 0;
+  }
+}
 
 .content {
   font-family: "Noto Sans JP";
@@ -189,36 +228,78 @@ h6 {
   letter-spacing: 0.8px;
   padding-left: 3px;
 }
+@media (max-width: 767px) {
+  .content {
+    padding-left: 0;
+    letter-spacing: normal;
+  }
+}
 
 .mgr-8 {
   margin-right: -5px;
+}
+@media (max-width: 767px) {
+  .mgr-8 {
+    margin-right: 0;
+  }
 }
 
 .policy {
   text-align: center;
   margin: 13px 0 86px;
 }
+@media (max-width: 767px) {
+  .policy {
+    margin: 0 0 50px;
+  }
+}
 
 .policy__title {
   margin-bottom: 30px;
 }
+@media (max-width: 767px) {
+  .policy__title {
+    margin-bottom: 10px;
+  }
+}
 
 .policy__icon {
   margin-bottom: 23px;
+}
+@media (max-width: 767px) {
+  .policy__icon {
+    margin-bottom: 10px;
+  }
 }
 
 .concept {
   text-align: center;
   margin-bottom: 80px;
 }
+@media (max-width: 767px) {
+  .concept {
+    margin-bottom: 50px;
+  }
+}
 
 .concept__icon {
   margin-bottom: 24px;
   padding-left: 5px;
 }
+@media (max-width: 767px) {
+  .concept__icon {
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+}
 
 .concept__lead {
   margin-bottom: 4px;
+}
+@media (max-width: 767px) {
+  .concept__lead {
+    margin-bottom: 10px;
+  }
 }
 
 .concept__content {
@@ -238,20 +319,44 @@ h6 {
   padding-top: 7px;
   padding-left: 25px;
 }
+@media (max-width: 767px) {
+  .profile__title {
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-left: 0;
+  }
+}
 
 .profile__icon {
   padding-left: 16px;
   margin-bottom: 85px;
 }
+@media (max-width: 767px) {
+  .profile__icon {
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+}
 
 .profile__container {
   display: flex;
 }
+@media (max-width: 767px) {
+  .profile__container {
+    display: block;
+  }
+}
 
 .profile__left {
-  width: calc(100% - 430px);
-  padding-right: 58px;
+  width: 455px;
   padding-left: 2px;
+}
+@media (max-width: 767px) {
+  .profile__left {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .profile-name,
@@ -262,7 +367,7 @@ h6 {
 }
 
 .profile-name {
-  padding-bottom: 13px;
+  padding-bottom: 15px;
 }
 
 .profile-favorite {
@@ -288,11 +393,13 @@ h6 {
 
 .profile__right {
   width: 430px;
+  margin-left: auto;
 }
-.profile__right img {
-  width: 100%;
+@media (max-width: 767px) {
+  .profile__right {
+    width: 100%;
+  }
 }
-
 .skill-lists {
   display: flex;
   align-items: center;
@@ -304,12 +411,28 @@ h6 {
   margin-top: 50px;
   margin-left: 2px;
 }
+@media (max-width: 767px) {
+  .skill-lists {
+    display: block;
+    margin-top: 24px;
+    margin-left: 0;
+    padding: 20px 30px;
+    width: 276px;
+    height: 100%;
+  }
+}
 
 .skill-title {
   font-size: 30px;
   font-weight: 600;
   padding-right: 32px;
   letter-spacing: 1.2px;
+}
+@media (max-width: 767px) {
+  .skill-title {
+    font-size: 18px;
+    padding-right: 0;
+  }
 }
 
 .skill-list {
@@ -322,6 +445,15 @@ h6 {
   color: #FFFFFF;
   display: inline-block;
   margin-left: 8px;
+}
+@media (max-width: 767px) {
+  .skill-list {
+    font-size: 16px;
+    letter-spacing: normal;
+    width: 214px;
+    height: 30px;
+    margin-left: 0;
+  }
 }
 .skill-list.is-red {
   background: #E45F2B;
@@ -339,16 +471,31 @@ h6 {
 /*---work---*/
 .work {
   background: #EBEBEB;
-  padding: 88px 80px 85px;
+  padding: 88px 80px 84px;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .work {
+    padding: 35px 0 30px;
+  }
 }
 
 .work__title {
   margin-bottom: 24px;
 }
+@media (max-width: 767px) {
+  .work__title {
+    margin-bottom: 10px;
+  }
+}
 
 .work__icon {
   padding-left: 7px;
+}
+@media (max-width: 767px) {
+  .work__icon {
+    padding-left: 0;
+  }
 }
 
 .work__card--items {
@@ -359,7 +506,7 @@ h6 {
 }
 @media (max-width: 767px) {
   .work__card--items {
-    margin-top: 24px;
+    margin-top: 10px;
   }
 }
 
@@ -367,6 +514,7 @@ h6 {
   width: calc(33.3% - 15.3333333333px);
   background-color: #EBEBEB;
   padding: 0;
+  text-align: left;
 }
 @media (min-width: 1280px) {
   .card__item:not(:nth-child(3n+1)) {
@@ -378,10 +526,10 @@ h6 {
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .card__item {
-    width: calc(50% - 11px);
+    width: calc(50% - 11.5px);
   }
   .card__item:not(:nth-child(2n+1)) {
-    margin-left: 22px;
+    margin-left: 23px;
   }
   .card__item:nth-child(n+3) {
     margin-top: 40px;
@@ -393,7 +541,7 @@ h6 {
     margin-left: 0;
   }
   .card__item:nth-child(n+1) {
-    margin-top: 24px;
+    margin-top: 40px;
   }
 }
 
@@ -406,31 +554,53 @@ h6 {
   font-size: 24px;
   line-height: 24px;
   margin-top: 23px;
-  text-align: left;
+}
+@media (max-width: 767px) {
+  .card__title {
+    font-size: 16px;
+    line-height: 1;
+    margin-top: 16px;
+  }
 }
 
 .card__text {
   line-height: 1.2;
   margin-top: 14px;
-  text-align: left;
+}
+@media (max-width: 767px) {
+  .card__text {
+    font-size: 12px;
+  }
 }
 
 .card__skill {
   line-height: 1;
   margin-top: 16px;
-  text-align: left;
+}
+@media (max-width: 767px) {
+  .card__skill {
+    font-size: 12px;
+  }
 }
 
 .card__time {
   line-height: 1;
   margin-top: 9px;
-  text-align: left;
+}
+@media (max-width: 767px) {
+  .card__time {
+    font-size: 12px;
+  }
 }
 
 .card__member {
-  text-align: left;
   line-height: 1.5;
   margin-top: 3px;
+}
+@media (max-width: 767px) {
+  .card__member {
+    font-size: 12px;
+  }
 }
 .card__member a {
   text-decoration: underline;
@@ -441,21 +611,39 @@ h6 {
   padding: 91px 282px 78px 291px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .contact {
+    padding: 35px 0 40px;
+  }
+}
 
 .contact__title {
   padding-left: 9px;
   margin-bottom: 17px;
 }
+@media (max-width: 767px) {
+  .contact__title {
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+}
 
 .contact__icon {
   padding-left: 11px;
+  margin-bottom: 22px;
+}
+@media (max-width: 767px) {
+  .contact__icon {
+    padding-left: 0;
+  }
 }
 
 .contact__form {
+  margin: 0 auto;
   width: 886px;
   max-width: 100%;
   background: #9AC1F0;
-  padding: 60px 140px 76px 126px;
+  padding: 60px 140px 75px 128px;
   font-family: "Noto Sans JP";
   text-align: left;
 }
@@ -474,14 +662,9 @@ h6 {
     padding-top: 24px;
   }
 }
-@media (max-width: 767px) {
-  .contact-form__row {
-    display: block;
-  }
-}
 
 .contact-form__label {
-  padding: 0 0 6px;
+  padding: 0 0 7px;
   margin: 0;
 }
 @media (max-width: 767px) {
@@ -491,6 +674,11 @@ h6 {
 }
 .contact-form__label label {
   color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .contact-form__label label {
+    font-size: 14px;
+  }
 }
 
 .contact-form__input {
@@ -503,9 +691,20 @@ h6 {
     margin-top: 8px;
   }
 }
+.contact-form__input input::-moz-placeholder {
+  font-size: 16px;
+  color: #36404B;
+  letter-spacing: 0.4px;
+  opacity: 1;
+}
+.contact-form__input input::placeholder {
+  font-size: 16px;
+  color: #36404B;
+  letter-spacing: 0.4px;
+}
 .contact-form__input [type=text] {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16);
-  padding: 11px 24px 15px;
+  padding: 13px 20px;
   border-radius: 5px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -517,7 +716,7 @@ h6 {
 }
 .contact-form__input [type=email] {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16);
-  padding: 11px 24px 15px;
+  padding: 13px 20px;
   border-radius: 5px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -530,7 +729,7 @@ h6 {
 .contact-form__input textarea {
   height: 200px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16);
-  padding: 10px 24px 10px;
+  padding: 8px 20px 10px;
   border-radius: 5px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -541,11 +740,25 @@ h6 {
   width: 100%;
   resize: none;
 }
+.contact-form__input textarea::-moz-placeholder {
+  font-size: 16px;
+  color: #36404B;
+  opacity: 1;
+}
+.contact-form__input textarea::placeholder {
+  font-size: 16px;
+  color: #36404B;
+}
 
 .contact-form__button {
-  padding-top: 17px;
+  padding-top: 13px;
   text-align: center;
   margin-left: 23px;
+}
+@media (max-width: 767px) {
+  .contact-form__button {
+    margin-left: 0;
+  }
 }
 .contact-form__button [type=submit] {
   width: 120px;
@@ -572,7 +785,12 @@ h6 {
 
 /*---footer---*/
 .footer {
-  height: 86px;
+  height: 85px;
+}
+@media (max-width: 767px) {
+  .footer {
+    height: 60px;
+  }
 }
 
 .footer__line {
@@ -580,10 +798,15 @@ h6 {
   background: #F6C445 linear-gradient(#fff 50%, transparent 50%, transparent 100%);
   background-size: 3px 3px;
 }
+@media (max-width: 767px) {
+  .footer__line {
+    height: calc(100% - 29px);
+  }
+}
 
 .copyright {
   height: 45px;
-  padding: 12px 0;
+  padding: 13px 0;
   font-size: 12px;
   font-family: "Noto Sans JP";
   text-align: center;
@@ -591,6 +814,6 @@ h6 {
 }
 @media (max-width: 767px) {
   .copyright {
-    padding: 8px 0;
+    height: 29px;
   }
 }
