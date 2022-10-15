@@ -722,17 +722,6 @@ h6 {
     margin-top: 8px;
   }
 }
-.contact-form__input input::-moz-placeholder {
-  font-size: 16px;
-  color: #36404B;
-  letter-spacing: 0.4px;
-  opacity: 1;
-}
-.contact-form__input input::placeholder {
-  font-size: 16px;
-  color: #36404B;
-  letter-spacing: 0.4px;
-}
 .contact-form__input [type=text] {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16);
   padding: 13px 20px;
@@ -771,16 +760,6 @@ h6 {
   width: 100%;
   resize: none;
 }
-.contact-form__input textarea::-moz-placeholder {
-  font-size: 16px;
-  color: #36404B;
-  opacity: 1;
-}
-.contact-form__input textarea::placeholder {
-  font-size: 16px;
-  color: #36404B;
-}
-
 .contact-form__button {
   padding-top: 15px;
   text-align: center;
