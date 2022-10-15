@@ -73,7 +73,7 @@ h6 {
 
 /*---header---*/
 .header {
-  height: 138px;
+  height: 135px;
   width: 100%;
 }
 @media (max-width: 767px) {
@@ -118,7 +118,7 @@ h6 {
   }
 }
 .header__nav li:not(:first-child) {
-  margin-left: 38px;
+  margin-left: 39px;
 }
 @media (max-width: 767px) {
   .header__nav li:not(:first-child) {
@@ -176,14 +176,12 @@ h6 {
   font-weight: 600;
   line-height: 0.8;
   margin-bottom: 20px;
-  padding-left: 5px;
 }
 @media (max-width: 767px) {
   .title {
     font-size: 30px;
     line-height: 0.6;
     margin-bottom: 10px;
-    padding-left: 0;
   }
 }
 
@@ -222,7 +220,7 @@ h6 {
   font-family: "Noto Sans JP";
   text-align: left;
   letter-spacing: 0.8px;
-  padding-left: 3px;
+  padding-left: 1px;
 }
 @media (max-width: 767px) {
   .content {
@@ -279,7 +277,7 @@ h6 {
 }
 
 .concept__title {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .concept__icon {
@@ -294,6 +292,7 @@ h6 {
 }
 
 .concept__lead {
+  padding-left: 0;
   margin-bottom: 4px;
 }
 @media (max-width: 767px) {
@@ -315,7 +314,7 @@ h6 {
 }
 
 .profile__title {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   padding-top: 7px;
   padding-left: 25px;
 }
@@ -328,7 +327,7 @@ h6 {
 }
 
 .profile__icon {
-  padding-left: 16px;
+  padding-left: 12px;
   margin-bottom: 85px;
 }
 @media (max-width: 767px) {
@@ -374,7 +373,7 @@ h6 {
 }
 
 .profile-name {
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 
 .profile-favorite {
@@ -437,7 +436,6 @@ h6 {
   border: #36404B 1px solid;
   border-radius: 3px;
   margin-top: 58px;
-  margin-left: 2px;
 }
 @media (max-width: 767px) {
   .skill-lists {
@@ -509,7 +507,6 @@ h6 {
 
 .work__inner {
   width: 1290px;
-  margin-left: auto;
 }
 @media (max-width: 767px) {
   .work__inner {
@@ -528,7 +525,7 @@ h6 {
 }
 
 .work__icon {
-  padding-left: 0;
+  padding-right: 10px;
 }
 
 .work__card--items {
@@ -551,7 +548,7 @@ h6 {
 }
 @media (min-width: 1280px) {
   .card__item:not(:nth-child(3n+1)) {
-    margin-left: 23px;
+    margin-left: 22px;
   }
   .card__item:nth-child(n+4) {
     margin-top: 48px;
@@ -689,7 +686,7 @@ h6 {
 }
 
 .contact-form__row:not(:first-child) {
-  padding-top: 38px;
+  padding-top: 36px;
 }
 @media (max-width: 767px) {
   .contact-form__row:not(:first-child) {
@@ -750,7 +747,7 @@ h6 {
 }
 .contact-form__input [type=email] {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.16);
-  padding: 13px 20px;
+  padding: 15px 20px;
   border-radius: 5px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -785,9 +782,9 @@ h6 {
 }
 
 .contact-form__button {
-  padding-top: 14px;
+  padding-top: 15px;
   text-align: center;
-  margin-left: 23px;
+  margin-left: 15px;
 }
 @media (max-width: 767px) {
   .contact-form__button {
