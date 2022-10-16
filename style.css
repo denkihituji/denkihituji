@@ -342,7 +342,7 @@ h6 {
 }
 @media (max-width: 767px) {
   .profile__container {
-    display: block;
+    flex-direction: column-reverse;
   }
 }
 
@@ -355,7 +355,6 @@ h6 {
     width: 100%;
     padding-right: 0;
     padding-left: 0;
-    order: 2;
   }
 }
 
@@ -405,7 +404,6 @@ h6 {
   .profile__right {
     width: 100%;
     margin-bottom: 10px;
-    order: 1;
   }
 }
 
